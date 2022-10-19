@@ -26,7 +26,7 @@ def generate_liste(n, min, max):
     return liste
 
 
-def verificate(tri):
+def check(tri):
     for i in range(len(tri)-1) :
         if tri[i] > tri[i+1]:
             return False
@@ -38,11 +38,11 @@ liste = generate_liste(10, -100, 100)
 
 print(liste)
 
-print(verificate(liste))
+print(check(liste))
 
 # tri = quick_sort(liste)
 
 print(quick_sort(liste))
 
 
-print(verificate(quick_sort(liste)))
+print(check(quick_sort(liste)))
