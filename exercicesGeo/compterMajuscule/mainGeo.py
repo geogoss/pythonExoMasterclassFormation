@@ -9,7 +9,7 @@
 
 
 
-phrase = "Bonjour Toto et CACA"
+phrase = "Bonjour Toto et SACHA"
 
 def compter(phrase):
     count = 0
