@@ -6,7 +6,7 @@ from utils import newListe
 
 laListe = newListe(15, 0, 20)
 
-def removeDuplicate(l):
+def removeDuplicate_linear(l):
     sansDoublon = []
     for e in laListe:
         for i in sansDoublon:
@@ -16,7 +16,7 @@ def removeDuplicate(l):
             sansDoublon.append(e)
     return sansDoublon
 
-print(removeDuplicate(laListe))
+print(removeDuplicate_linear(laListe))
 
 
 
