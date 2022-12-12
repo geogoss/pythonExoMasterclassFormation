@@ -25,7 +25,7 @@ def generate_random_list(n, min, max):
     for i in range(n):
         e = random.randint(min, max)
         l.append(e)
-    return l
+    return l    
 
 def quicksort(l):
     qsort_loop(l, 0, len(l)-1)
