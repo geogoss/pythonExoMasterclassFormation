@@ -21,4 +21,3 @@ print(f"Le mot le plus long est : {trouverLeMot(chaine)[1]}")
 
 
 
-

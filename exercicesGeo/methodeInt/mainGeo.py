@@ -30,6 +30,35 @@ def transformation(chaine):
 a = transformation(chaine)
 print(a + 6)
     
+# entrainement -------------------------------------------
+
+# chaine2 = "55"
+
+# def convertir(chaine):
+
+#     Chaine_a_convertir = chaine
+#     isNegative = False
+#     if Chaine_a_convertir[0] == "-":
+#         isNegative = True
+#         Chaine_a_convertir = Chaine_a_convertir[1::]
+
+
+#     d = 0
+#     f = 1
+#     for i in range(len(Chaine_a_convertir)-1, -1, -1):
+#         c = ord(Chaine_a_convertir[i]) - ord("0")
+#         if c > 9 or c < 0:
+#             print(f"Le symbol {Chaine_a_convertir[i]} ne peut être converti")
+#             raise ValueError("Cet élément ne peut pas être converti en nombre")
+#         d += c*f
+#         f *= 10
+#     if isNegative == True:
+#         d = -d
+#     return d
+
+# a = convertir(chaine2)
+# print(a + 1000000)
+
 
 
 

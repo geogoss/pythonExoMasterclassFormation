@@ -6,7 +6,7 @@ c = [14, 14, 12, 11, 8, 6, 6, 6, 2, 1]
 d = [1, 1, 1, 1, 1, 1]
 
 # est-ce une série de données monotones -> qui croit ou décroit mais pas les deux
-
+ 
 def monotone(x):
     positif = None
     negatif = None
@@ -51,5 +51,45 @@ def monoNeg(z):
 
 print(monoPos(d))
 print(monoNeg(d))
+
+
+
+# fait autrement pour m'entrainer ---------------------------
+
+def isMonotoneCroissante(x):
+    n = 0
+    for i in range(len(x)-1):
+        if x[i] > x[i+1]:
+            print("Ce n'est pas une suite monotone croissante")
+            n = 1
+            break
+
+    if n == 0:
+        print("C'est une suite monotone croissante")
+
+def isMonotoneDecroissante(x):
+    n = 0
+    for i in range(len(x)-1):
+        if x[i] < x[i+1]:
+            print("Ce n'est pas une suite monotone décroissante")
+            n = 1
+            break
+
+    if n == 0:
+        print("C'est une suite monotone décroissante")
+    
+print("a : ----------------")
+isMonotoneCroissante(a)
+isMonotoneDecroissante(a)
+print("b : ----------------")
+isMonotoneCroissante(b)
+isMonotoneDecroissante(b)
+print("c : ----------------")
+isMonotoneCroissante(c)
+isMonotoneDecroissante(c)
+print("d : ----------------")
+isMonotoneCroissante(d)
+isMonotoneDecroissante(d)
+
 
 
